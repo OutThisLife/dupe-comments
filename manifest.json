@@ -1,0 +1,15 @@
+{
+  "name": "Duplicate Comments",
+  "description": "Show many times a comment has been made on the internet, word for word. If it's more than 1, then you've likely found a bot.",
+  "version": "0.1",
+  "manifest_version": 2,
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js" : ["index.js"],
+    "css": ["styles.css"],
+    "run_at":"document_end"
+  }],
+  "permissions": [
+    "activeTab"
+  ]
+}

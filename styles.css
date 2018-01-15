@@ -1,0 +1,10 @@
+[data-shill] {
+  border: 2px solid red;
+}
+
+[data-shill]:before {
+  content: attr(data-shill)' duplicates found';
+  color: red;
+  font-weight: 700;
+  font-size: 2rem;
+}
